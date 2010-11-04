@@ -185,3 +185,8 @@ ul.posts span {
 #related h2 {
     margin-bottom: 1em;
 }
+#banners {
+    position: absolute;
+    right: 3.5em;
+    top: 3em;
+}
