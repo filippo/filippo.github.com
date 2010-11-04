@@ -1,10 +1,23 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="utf-8" />
-  <title>My Web pages on GitHub</title>
-</head>
-<body>
-  A Github web page.
+---
+layout: default
+title: SG Dev Corner
+---
+
+<div id="home">
+  <h1>Blog Posts</h1>
+  <ul class="posts">
+    {% for post in site.posts %}
+      <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>
+    {% endfor %}
+  </ul>
+
+  <h1>Open Source Projects</h1>
+  <ul class="posts">
+    <li><a href="http://github.com/filippo/jquery.sg.video/">jquery.sg.video</a> | JQuery plugin to display videos using HTML 5 features when available.</li>
+    <li><a href="http://github.com/filippo/sgjs/">sgjs</a> | Small collection of Javascript tools and utilities.</li>
+    <li><a href="http://github.com/filippo/ewgi/">ewgi</a> | Erlang Web Gateway Interface: a standard interface between Erlang web servers and applications.</li>
+    <li><a href="http://github.com/filippo/sgte/">sgte</a> | A simple Erlang Template Engine inspired on <a href="http://www.stringtemplate.org/">String Template</a>.</li>
+  </ul>
+</div>
 </body>
 </html>
