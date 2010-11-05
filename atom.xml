@@ -4,7 +4,7 @@ layout: nil
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
  
- <title>SG Dev Corner - Filippo Pacini</title>
+ <title>Filippo Pacini</title>
  <link href="http://filippo.github.com/atom.xml" rel="self"/>
  <link href="http://filippo.github.com/"/>
  <updated>{{ site.time | date_to_xmlschema }}</updated>
