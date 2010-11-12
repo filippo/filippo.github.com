@@ -61,6 +61,22 @@ ul.posts span {
 
 /*****************************************************************************/
 /*
+/* About Me
+/*
+/*****************************************************************************/
+ul.about {
+    margin-bottom: 2em;
+    list-style-position: inside;
+    margin-left: 1em;
+    color: #444;
+}
+
+ul.about li {
+    line-height: 1.75em;
+}
+
+/*****************************************************************************/
+/*
 /* Site
 /*
 /*****************************************************************************/
@@ -73,28 +89,35 @@ ul.posts span {
   line-height: 1.5em;
 }
 
-.title {
+nav {
   color: #a00;
   font-weight: bold;
   margin-bottom: 2em;
 }
 
-  .site .title a {
+  .site nav a {
     color: #8BCC00;
     text-decoration: none;
+    margin: 0 10px;
   }
 
-  .site .title a:hover {
+  .site nav a.first {
+    color: #8BCC00;
+    text-decoration: none;
+    margin-left: 0;
+  }
+
+  .site nav a:hover {
     color: black;
   }
 
-  .site .title a.extra {
+  .site nav a.extra {
     color: #aaa;
     text-decoration: none;
     margin-left: 1em;
   }
 
-  .site .title a.extra:hover {
+  .site nav a.extra:hover {
     color: black;
   }
 
@@ -185,9 +208,12 @@ ul.posts span {
 #related h2 {
     margin-bottom: 1em;
 }
+
 #banners {
     position: absolute;
     right: 0.5em;
     top: 3em;
 }
 #banners p {color: #666;}
+
+.clearer {display: block; clear: both;}

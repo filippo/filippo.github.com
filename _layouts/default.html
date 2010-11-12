@@ -11,13 +11,14 @@
 <body>
 
 <div class="site">
-  <div class="title">
-    <a href="/">Home</a>
-  </div>
-  
+  <nav>
+    <a href="/" class="first">Home</a> |
+    <a href="/about.html">About</a>
+  </nav>
+
   {{ content }}
   
-  <div class="footer">
+  <footer class="footer">
     <div class="contact">
       <p>
         Filippo Pacini<br>
@@ -35,13 +36,13 @@
         <a href="http://feeds.feedburner.com/filippo-pacini"><img src="/images/feed.jpg" alt="Subscribe to RSS Feed" /></a>
     </div>
   </div>
-</div>
-<div id="banners">
+</footer>
+<aside id="banners">
 <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/String" title="JS String search"><img src="http://static.jsconf.us/promotejsv.gif" height="280" width="160" alt="JS String search" border="0" /></a>
 <p>
 Website made with <a href="http://github.com/mojombo/jekyll">Jekyll</a>
 </p>
-</div>
+</aside>
 <script type="text/javascript">
 
   var _gaq = _gaq || [];
