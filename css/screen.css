@@ -217,3 +217,9 @@ nav {
 #banners p {color: #666;}
 
 .clearer {display: block; clear: both;}
+
+/* disqus styles */
+#disqus_thread {
+    margin: 1em 0 0.2em 0;
+}
+a.dsq-brlink {margin-bottom: 1em;}
