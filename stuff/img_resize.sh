@@ -30,7 +30,7 @@ thumb() {
     local in_file=$1
     local out_file=$2
     local geometry=$3
-    $(convert -colorspace RGB -strip -thumbnail $geometry\> $in_file $out_file)
+    $(convert -colorspace RGB -density 72x72 -strip -thumbnail $geometry\> $in_file $out_file)
 }
 
 if [ $# -le 1 ]; then
