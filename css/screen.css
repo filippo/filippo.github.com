@@ -145,6 +145,15 @@ nav {
         color: #333;
       }
 
+
+      .site .footer .banners {
+                               float: left;
+                               margin-left: 4.5em;
+                               margin-top: 0.4em
+                               }
+
+      .site .footer .banners img { height: 130px; width: 100px; }
+
     .site .footer .rss {
       margin-top: 1.1em;
       margin-right: -.2em;
@@ -209,13 +218,6 @@ nav {
 #related h2 {
     margin-bottom: 1em;
 }
-
-#banners {
-    position: absolute;
-    right: 0.5em;
-    top: 3em;
-}
-#banners p {color: #666;}
 
 .clearer {display: block; clear: both;}
 
