@@ -7,7 +7,7 @@ Intro
 ================
 After a lot of time I decided to restart writing some blog posts. 
 I moved from my home made blog platform to [Jekyll](https://github.com/mojombo/jekyll).
-I also moved the blog to [Github Pages](http://pages.github.com/) which support Kekyll.
+I also moved the blog to [Github Pages](https://pages.github.com/) which support Kekyll.
 
 So far I'm really happy with the new platform.
 

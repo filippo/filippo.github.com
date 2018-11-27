@@ -23,9 +23,9 @@
   <footer class="footer">
     <div class="contact">
       <p>
-        Filippo Pacini<br>
-        Cofounder of <a href="https://www.sgconsulting.it/">S.G. Consulting</a><br>
-	fili<a href="https://www.google.com/recaptcha/mailhide/d?k=014GzNgLqmS85BqvnZNHQ77g==&amp;c=qsA-APpD8ajL-9vJqLDAd5ZBosAt1xcM_4UwU4m8fH8=" onclick="window.open('https://www.google.com/recaptcha/mailhide/d?k\075014GzNgLqmS85BqvnZNHQ77g\75\75\46c\75qsA-APpD8ajL-9vJqLDAd5ZBosAt1xcM_4UwU4m8fH8\075', '', 'toolbar=0,scrollbars=0,location=0,statusbar=0,menubar=0,resizable=0,width=500,height=300'); return false;" title="Reveal this e-mail address">...</a>@gmail.com
+        <strong>Filippo Pacini</strong><br>
+	      Email: <a href="javascript:;" id="myEmailAddr"></a><br>
+        Cofounder of <a href="https://www.sgconsulting.it/">S.G. Consulting</a>
       </p>
     </div>
     <div class="contact">
@@ -34,12 +34,22 @@
         <a href="https://github.com/filippo/">github.com/filippo</a><br />
       </p>
     </div>
-    <div class="banners">
-      <p>Website made with <a href="https://github.com/mojombo/jekyll">Jekyll</a> <br>
-        Based on <a href="https://github.com/mojombo/mojombo.github.com">mojombo.github.com</a>
-      </p>
+    <div class="rss">
+      <a href="https://feeds.feedburner.com/filippo-pacini"><img src="/images/feed.jpg" alt="Subscribe to RSS Feed" /></a>
     </div>
+    <div class="clearer"></div>
+    <p class="txt-center">
+      Website made with <a href="https://github.com/mojombo/jekyll">Jekyll</a> - 
+      Based on <a href="https://github.com/mojombo/mojombo.github.com">mojombo.github.com</a>
+    </p>
 </footer>
+<script src="https://c02ba7fe1ca1e739798b-a16cb73629a1eb0724c54d0ede519c20.ssl.cf1.rackcdn.com/sgjs-0.8.1.min.js"></script>
+<script>
+  var encryptedEmail = sg.sjcl.encrypt("ECaRbcdN3", sg.html.email('filippo.pacini', 'gmail', 'com'));
+  var emailID = document.getElementById('myEmailAddr');
+  emailID.innerHTML = sg.sjcl.decrypt("ECaRbcdN3", encryptedEmail);
+  emailID.href = 'mailto: '+sg.sjcl.decrypt("ECaRbcdN3", encryptedEmail);
+</script>
 <script type="text/javascript">
 
   var _gaq = _gaq || [];
