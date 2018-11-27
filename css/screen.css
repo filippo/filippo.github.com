@@ -9,7 +9,7 @@ html, body {
 
 body {
     background-color: white;
-    font: 13.34px 'Droid Sans', clean, sans-serif;
+    font: 13.54px 'Droid Sans', clean, sans-serif;
     *font-size: small;
     text-align: center;
 }
@@ -31,7 +31,7 @@ a, a:visited {
 }
 
 a:hover {
-    color: #8BCC00;
+    color: #008000;
 }
 
 table {
@@ -108,19 +108,19 @@ ul.about li {
 
 nav {
   color: #a00;
-  font-weight: bold;
+  font-size: 1.1em;
   margin-bottom: 2em;
   padding-top: 12px;
 }
 
   .site nav a {
-    color: #8BCC00;
+    color: #008000;
     text-decoration: none;
-    margin: 0 10px;
+    margin: 0 5px;
   }
 
   .site nav a.first {
-    color: #8BCC00;
+    color: #008000;
     text-decoration: none;
     margin-left: 0;
   }
@@ -157,7 +157,7 @@ nav {
     }
 
       .site .footer .contact a:hover {
-        color: #8BCC00;
+        color: #008000;
       }
       .site .footer .contact a {
         color: #333;
