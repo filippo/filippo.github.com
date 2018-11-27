@@ -39,6 +39,19 @@ table {
     font: 100%;
 }
 
+.logo {
+  font-family: 'Roboto Mono', monospace;
+  font-size: 36px;
+  line-height: 36px;
+  font-weight: normal;
+  color: #000;
+  text-align: right;
+  float: right;
+}
+.logo a {
+  text-decoration: none;
+}
+
 .txt-center {
   text-align: center;
 }
@@ -88,7 +101,7 @@ ul.about li {
 .site {
   font-size: 110%;
   text-align: justify;
-  width: 40em;
+  width: 50em;
   margin: 3em auto 2em auto;
   line-height: 1.5em;
 }
@@ -97,6 +110,7 @@ nav {
   color: #a00;
   font-weight: bold;
   margin-bottom: 2em;
+  padding-top: 12px;
 }
 
   .site nav a {
@@ -232,3 +246,28 @@ nav {
     margin: 1em 0 0.2em 0;
 }
 a.dsq-brlink {margin-bottom: 1em;}
+
+@media only screen and (max-width: 767px) {
+  body {
+    padding: 20px;
+  }
+  .site {
+    width: 100%;
+    margin-top: 0;
+    text-align: justify;
+  }
+
+  .logo {
+    float: none;
+    clear: both;
+    font-size: 20px;
+    line-height: 20px;
+    margin: 0;
+    text-align: left;
+  }
+}
+@media only screen and (max-width: 479px) {
+  .site {
+    text-align: left;
+  }
+}
