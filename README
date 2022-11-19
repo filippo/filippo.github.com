@@ -1,0 +1,48 @@
+# WebSite
+
+This website is built using Jekyll
+
+## Prerequisites
+
+Install ruby
+
+```
+$ sudo apt install ruby-full build-essentials
+```
+
+## Install Jekyll
+
+```
+$ sudo gem install jekyll bundler
+```
+
+## Development
+
+In the root of the folder run:
+```
+$ bundle init
+$ bundle install
+$ bundle add jekyll
+```
+
+Then run the jekyll server:
+
+```
+bundle exec jekyll serve [--livereload]
+```
+
+The option `--livereload` watches for changes to the site during development.
+
+If this command fails add `webrick` to dependencies:
+```
+bundle add webrick
+```
+
+## Build
+
+```
+$ jekyll build 
+```
+
+Builds the site and outputs a static site to a directory called _site.
+
