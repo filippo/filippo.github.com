@@ -12,7 +12,7 @@ window.addEventListener('DOMContentLoaded', () => {
     carousel(carouselText, document.querySelector("#feature-text"));
 });
 
-async function typeSentence(sentence, elRef, delay = 100) {
+async function typeSentence(sentence, elRef, delay = 70) {
     const letters = sentence.split("");
     let i = 0;
     while(i < letters.length) {
@@ -27,7 +27,7 @@ async function deleteSentence(elRef) {
     const sentence = elRef.innerHTML;
     const letters = sentence.split("");
     while(letters.length > 0) {
-        await waitForMs(100);
+        await waitForMs(50);
         letters.pop();
         elRef.innerHTML = letters.join("");
     }

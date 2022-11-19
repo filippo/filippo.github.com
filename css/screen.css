@@ -69,8 +69,31 @@ table {
 /* Home
 /*
 /*****************************************************************************/
+/* typewriter effect styles */
+#feature-text {
+    margin-left: 3px;
+}
+.input-cursor {
+    display: inline-block;
+    width: 2px;
+    height: 16px;
+    background-color: darkgray;
+    margin-left: 0;
+    animation: blink .6s linear infinite alternate;
+}
+
+@keyframes blink {
+    0% {opacity: 1;}
+   40% {opacity: 1;}
+   60% {opacity: 0;}
+  100% {opacity: 0;}
+}
+/* end typewriter effect styles */
+
+.social a:first-of-type { margin-left: 0; }
 .social a { text-decoration: none; margin-left: 3em; }
 
+/* profile image circle */
 .profile {
     width: 300px;
     margin: 0 auto;
@@ -80,6 +103,7 @@ table {
     border-radius: 150px;
 }
 
+/* posts */
 ul.posts {
     list-style-type: none;
     margin-bottom: 2em;
