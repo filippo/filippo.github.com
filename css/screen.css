@@ -26,6 +26,14 @@ p {
     margin: 1em 0;
 }
 
+p.smaller {
+    font-size: 80%;
+}
+
+p.bigger {
+    font-size: 120%;
+}
+
 a, a:visited {
     color: #666;
 }
@@ -61,6 +69,16 @@ table {
 /* Home
 /*
 /*****************************************************************************/
+.social a { text-decoration: none; margin-right: 3em; }
+
+.profile {
+    width: 300px;
+    margin: 0 auto;
+}
+.profile img {
+    width: 300px;
+    border-radius: 150px;
+}
 
 ul.posts {
     list-style-type: none;

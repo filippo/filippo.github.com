@@ -29,24 +29,24 @@
     <div class="contact">
       <p>
         <strong>Filippo Pacini</strong><br>
-        <i class="fa fa-regular fa-envelope"></i>
-        <a href="javascript:;" id="myEmailAddr"></a><br>
+        <i class="fa fa-envelope"></i>
+        <a href="javascript:;" class="myEmailAddr"></a><br>
         Cofounder of <a href="https://www.sgconsulting.it/">S.G. Consulting</a>
       </p>
     </div>
     <div class="contact">
       <p>
         <i class="fa fa-brands fa-twitter"></i>
-          <a href="https://twitter.com/filz/">
+        <a href="https://twitter.com/filz/">
           @filz on Twitter
-        </a><br />
-        <i class="fa fa-brands fa-mastodon"></i>
-        <a href="https://noc.social/@filz">
-            @filz@noc.social on Mastodon
         </a><br />
         <i class="fa fa-brands fa-tumblr"></i>
         <a href="https://fpacini.tumblr.com">
           @fpacini on Tumblr
+        </a><br>
+        <i class="fa fa-brands fa-mastodon"></i>
+        <a href="https://noc.social/@filz">
+          @filz@noc.social on Mastodon
         </a>
       </p>
     </div>
@@ -75,23 +75,23 @@
 </footer>
 <script src="https://c02ba7fe1ca1e739798b-a16cb73629a1eb0724c54d0ede519c20.ssl.cf1.rackcdn.com/sgjs-0.8.1.min.js"></script>
 <script>
-  var encryptedEmail = sg.sjcl.encrypt("ECaRbcdN3", sg.html.email('filippo.pacini', 'proton', 'me'));
-  var emailID = document.getElementById('myEmailAddr');
-  emailID.innerHTML = sg.sjcl.decrypt("ECaRbcdN3", encryptedEmail);
-  emailID.href = 'mailto: '+sg.sjcl.decrypt("ECaRbcdN3", encryptedEmail);
+  const encryptedEmail = sg.sjcl.encrypt("ECaRbcdN3", sg.html.email('filippo.pacini', 'proton', 'me'));
+  const emailIDs = Array.from(document.querySelectorAll('.myEmailAddr'));
+  emailIDs.map(emailEl => {
+      emailEl.innerHTML = sg.sjcl.decrypt("ECaRbcdN3", encryptedEmail);
+      emailEl.href = 'mailto: '+sg.sjcl.decrypt("ECaRbcdN3", encryptedEmail);
+  });
 </script>
-<script type="text/javascript">
+<script src="js/text-carousel.js"></script>
 
-  var _gaq = _gaq || [];
-  _gaq.push(['_setAccount', 'UA-762372-1']);
-  _gaq.push(['_trackPageview']);
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-1BX9QR6YZR"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
 
-  (function() {
-    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-  })();
-
+gtag('config', 'G-1BX9QR6YZR');
 </script>
 </body>
 </html>
