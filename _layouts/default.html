@@ -75,7 +75,7 @@
 </footer>
 <script src="https://c02ba7fe1ca1e739798b-a16cb73629a1eb0724c54d0ede519c20.ssl.cf1.rackcdn.com/sgjs-0.8.1.min.js"></script>
 <script>
-  const encryptedEmail = sg.sjcl.encrypt("ECaRbcdN3", sg.html.email('filippo.pacini', 'proton', 'me'));
+  const encryptedEmail = sg.sjcl.encrypt("ECaRbcdN3", sg.html.email('fp', 'fpacini', 'email'));
   const emailIDs = Array.from(document.querySelectorAll('.myEmailAddr'));
   emailIDs.map(emailEl => {
       emailEl.innerHTML = sg.sjcl.decrypt("ECaRbcdN3", encryptedEmail);
