@@ -35,14 +35,17 @@
     <div class="contact">
       <p>
         <a href="https://twitter.com/filz/">@filz on Twitter</a><br />
+        <a href="https://noc.social/@filz">@filz@noc.social on Mastodon</a><br />
+	<a href="https://fpacini.tumblr.com">@fpacini on Tumblr</a>
+      </p>
+    </div>
+    <div class="contact">
+      <p>
         <a href="https://github.com/filippo/">My Github Projects</a><br />
         <a href="https://stackoverflow.com/users/121199/filippo">StackOverflow Profile</a><br />
 	
       </p>
-    </div>
-    <div class="rss">
-      <a href="https://feeds.feedburner.com/filippo-pacini"><img src="/images/feed.jpg" alt="Subscribe to RSS Feed" /></a>
-    </div>
+    </div>	  
     <div class="clearer"></div>
     <p class="txt-center">
       Website made with <a href="https://github.com/mojombo/jekyll">Jekyll</a> - 
@@ -51,7 +54,7 @@
 </footer>
 <script src="https://c02ba7fe1ca1e739798b-a16cb73629a1eb0724c54d0ede519c20.ssl.cf1.rackcdn.com/sgjs-0.8.1.min.js"></script>
 <script>
-  var encryptedEmail = sg.sjcl.encrypt("ECaRbcdN3", sg.html.email('filippo.pacini', 'gmail', 'com'));
+  var encryptedEmail = sg.sjcl.encrypt("ECaRbcdN3", sg.html.email('filippo.pacini', 'proton', 'me'));
   var emailID = document.getElementById('myEmailAddr');
   emailID.innerHTML = sg.sjcl.decrypt("ECaRbcdN3", encryptedEmail);
   emailID.href = 'mailto: '+sg.sjcl.decrypt("ECaRbcdN3", encryptedEmail);
